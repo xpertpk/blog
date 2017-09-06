@@ -1,0 +1,44 @@
+1)	Download Xampp in install
+	Link:	https://www.apachefriends.org/xampp-files/5.6.31/xampp-win32-5.6.31-0-VC11-installer.exe
+2)	Download Composer with xampp/wampp php.exe Location
+	Link:	https://getcomposer.org/Composer-Setup.exe
+3) 	Create First Laravel Project
+	write in CMD and Enter. 
+	Link:	composer create-project --prefer-dist laravel/laravel blog
+4)	Copy index.php & .htaccess file and paste on root
+	delete ../ in index.php for change puclic to root main URL.
+5)	Create database and change db user pass in .env file
+6)	Write in CMD and Enter for install migrate tables in Database
+	php artisan migrate
+	and Enter if database will not install properly then write this code in AppServiceProvider.php
+	use Illuminate\Support\Facades\Schema;
+	public function boot()
+	{
+		Schema::defaultStringLength(191);
+	}
+7)	Write in CMD and enter for create user controller and files in recource.
+	php artisan make:auth
+8)	Change css path in app.css with public/css/app.css for locating css file to auth files.
+9)	
+10)	php artisan make:controller PostController
+11)	php artisan make:controller ProfileController
+12)	php artisan make:controller CategoryController
+
+
+
+
+
+
+https://git-scm.com/download/win
+
+https://github.com/xpertpk/blog.git
+
+echo "# blog" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/xpertpk/blog.git
+git push -u origin master
+
+git remote add origin https://github.com/xpertpk/blog.git
+git push -u origin master
