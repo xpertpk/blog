@@ -23,6 +23,11 @@
 10)	php artisan make:controller PostController
 11)	php artisan make:controller ProfileController
 12)	php artisan make:controller CategoryController
+13)	php artisan make:migration create_posts_table --create=posts
+14)	php artisan make:migration create_profile_table --create=profiles
+15)	php artisan make:migration create_categories_table --create=categories
+16)	php artisan make:migration create_likes_table --create=likes
+17)	php artisan make:migration create_dislikes_table --create=dislikes
 
 
 
@@ -42,3 +47,7 @@ git push -u origin master
 
 git remote add origin https://github.com/xpertpk/blog.git
 git push -u origin master
+
+
+
+git config core.autocrlf true
